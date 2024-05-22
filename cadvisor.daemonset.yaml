@@ -12,11 +12,10 @@ spec:
       labels:
         name: cadvisor
     spec:
+      restartPolicy: Always
       containers:
         - name: cadvisor
           image: google/cadvisor:latest
-          ports:
-            - containerPort: 8080
           volumeMounts:
           - name: disk
             mountPath: /dev/disk
@@ -33,7 +32,8 @@ spec:
           - name: sys
             mountPath: /sys
             readOnly: true
-      restartPolicy: Always
+          ports:
+            - containerPort: 8080
       volumes:
       - name: rootfs
         hostPath:
