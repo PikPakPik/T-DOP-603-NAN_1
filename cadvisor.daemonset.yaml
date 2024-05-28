@@ -15,7 +15,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: cadvisor
-          image: google/cadvisor:latest
+          image: gcr.io/cadvisor/cadvisor:latest
           volumeMounts:
           - name: disk
             mountPath: /dev/disk
