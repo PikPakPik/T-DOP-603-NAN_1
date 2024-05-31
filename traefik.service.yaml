@@ -10,11 +10,11 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 80
+      port: 30021
       targetPort: 80
       nodePort: 30021
     - name: dashboard
       protocol: TCP
-      port: 80
+      port: 30042
       targetPort: 8080
       nodePort: 30042
