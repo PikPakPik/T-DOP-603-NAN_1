@@ -12,7 +12,13 @@ It is constitued of:
 ## How to run the project
 
 ```bash
+> sudo minikube tunnel
 > make build
+
+# Go to :
+> http://poll.dop.io:30021
+> http://result.dop.io:30021
+> http://localhost:30042
 ```
 
 ## COLLABORATION
