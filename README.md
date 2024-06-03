@@ -13,7 +13,8 @@ It is constitued of:
 
 ```bash
 > sudo minikube tunnel
-> make build
+> sudo ./bernstein.sh
+```
 
 # Go to :
 > http://poll.dop.io:30021
