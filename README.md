@@ -12,6 +12,7 @@ It is constitued of:
 ## How to run the project
 
 ```bash
+> minikube start --nodes 2
 > sudo minikube tunnel
 > sudo ./bernstein.sh
 ```
