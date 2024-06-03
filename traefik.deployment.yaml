@@ -31,7 +31,7 @@ spec:
         ports:
         - name: http
           containerPort: 80
-        - name: dashboard
+        - name: admin
           containerPort: 8080
         args:
         - --api.insecure

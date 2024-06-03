@@ -5,16 +5,15 @@ metadata:
  namespace: kube-public
 spec:  
   selector:
-    app: traefik-ingress-lb
-  type: LoadBalancer
+    app: traefik
   ports:
     - name: http
       protocol: TCP
-      port: 80
+      port: 30021
       targetPort: 80
       nodePort: 30021
-    - name: dashboard
+    - name: admin
       protocol: TCP
-      port: 8080
+      port: 30042
       targetPort: 8080
       nodePort: 30042
