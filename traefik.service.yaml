@@ -5,15 +5,16 @@ metadata:
  namespace: kube-public
 spec:  
   selector:
-    app: traefik
+    app: traefik-ingress-lb
+  type: NodePort
   ports:
     - name: http
       protocol: TCP
-      port: 30021
+      port: 80
       targetPort: 80
       nodePort: 30021
     - name: admin
       protocol: TCP
-      port: 30042
+      port: 8080
       targetPort: 8080
       nodePort: 30042
